@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Saved Recipes</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<!-- Link to external stylesheet -->
+</head>
+<body>
+	<header>
+		<h1>My Saved Recipes</h1>
+		<nav>
+			<a href="recipes.html">Home</a>
+			<a href="about.html">About Me</a>
+			<a href="contact.html">Contact Details</a>
+			<a href="#" class="active">Personal Folder</a>
+			<!-- Navigation menu with links to different pages -->
+		</nav>
+	</header>
+
+	<div id="saved-list"></div>
+	<!-- Container for saved recipe cards -->
+
+	<footer>
+		<p>&copy; 2023 My Hobby Recipes</p>
+		<!-- Copyright information -->
+	</footer>
+
+	<script>
+		// Retrieve saved list from local storage
+		let savedList = JSON.parse(localStorage.getItem("savedList")) || [];
+
+		// Get the container for the saved recipe cards
+		let savedListContainer = document.getElementById("saved-list");
+
+		// Loop through the saved list and create recipe cards for each saved item
+		for (let i = 0; i < savedList.length; i++) {
+			let savedItem = savedList[i];
+
+			// Create a recipe card for the saved item
+			let card = document.createElement("div");
+			card.classList.add("recipe-card");
+
+			let img = document.createElement("img");
+			img.src = savedItem.imageSrc;
+			img.alt = savedItem.title;
+
+			let title = document.createElement("h2");
+			title.textContent = savedItem.title;
+
+			card.appendChild(img);
+			card.appendChild(title);
+
+			savedListContainer.appendChild(card);
+		}
+	</script>
+</body>
+</html>
+

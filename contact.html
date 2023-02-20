@@ -1,0 +1,50 @@
+<!DOCTYPE html> <!-- specifies the type of document as HTML5 -->
+<html lang="en"> <!-- opening tag for the root element, with the language attribute set to English -->
+<head>
+  <meta charset="UTF-8"> <!-- specifies the character encoding for the document -->
+  <title>Contact Us</title> <!-- sets the title of the document -->
+  <link rel="stylesheet" href="index.css"> <!-- links the CSS stylesheet to the HTML document -->
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1> <!-- main heading of the page -->
+    <nav> <!-- navigation links to other pages of the website -->
+      <a href="#" class="active">Contact Us</a>
+      <a href="recipes.html">Recipes</a>
+      <a href="about.html">About</a>
+			<a href="save-for-later.html">Personal Folder</a>
+    </nav>
+  </header>
+
+  <div class="block">
+    <h2>Get in Touch</h2> <!-- subheading for the contact form -->
+    <p>We'd love to hear from you! Fill out the form below to send us a message.</p> <!-- introductory message for the form -->
+    <form> <!-- the contact form itself -->
+      <label for="name">Name:</label> <!-- label for the name input field -->
+      <input type="text" id="name" name="name"><br> <!-- text input field for the user's name -->
+
+      <label for="email">Email:</label> <!-- label for the email input field -->
+      <input type="email" id="email" name="email"><br> <!-- email input field for the user's email address -->
+
+      <label for="message">Message:</label> <!-- label for the message input field -->
+      <textarea id="message" name="message"></textarea><br> <!-- textarea input field for the user's message -->
+
+      <input type="submit" value="Send Message"> <!-- submit button for the form -->
+    </form>
+  </div>
+
+  <div class="block">
+    <h2>Contact Information</h2> <!-- subheading for the contact information -->
+    <ul> <!-- unordered list for the contact information -->
+      <li><strong>Address:</strong> 123 Main St, Anytown USA</li> <!-- list item for the address -->
+      <li><strong>Phone:</strong> 555-1234</li> <!-- list item for the phone number -->
+      <li><strong>Email:</strong> <a href="mailto:info@example.com">info@example.com</a></li> <!-- list item for the email address, with a mailto link for convenience -->
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 My Recipe Website</p> <!-- footer text for the copyright notice -->
+  </footer>
+</body>
+</html>
+

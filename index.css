@@ -1,0 +1,374 @@
+/* set body margin and font family */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* set header background color and text color */
+  header {
+    background-color: #f2a154;
+    color: white;
+    padding: 20px;
+  }
+  
+  /* set header h1 font size and margin */
+  header h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  /* set nav links to display as inline blocks with padding */
+  nav a {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* set active nav link to have a background color */
+  nav a.active {
+    background-color: #e8933a;
+  }
+  
+  /* set recipe card container to display as flex with column layout */
+  .recipe-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* set recipe card width and margin */
+  .recipe-card {
+    width: 80%;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  /* set recipe card image size */
+  .recipe-card img {
+    max-width: 100%;
+  }
+  
+  /* set recipe card title font size and margin */
+  .recipe-card h2 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  /* set recipe card subtitle font size and margin */
+  .recipe-card h3 {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  /* set recipe card paragraph font size */
+  .recipe-card p {
+    font-size: 16px;
+  }
+  
+  /* set recipe card list margin and padding */
+  .recipe-card ul {
+    margin: 10px 0;
+    padding: 0 20px;
+  }
+  
+  /* set recipe card list item font size and margin */
+  .recipe-card li {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  /* set recipe card button background color and font size */
+  .recipe-card button {
+    background-color: #f2a154;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* set footer background color and text color */
+  footer {
+    background-color: #f2a154;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* set block background color, text color, and padding */
+  .block {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 20px;
+  }
+  
+  /* set block h2 font size and margin */
+  .block h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  /* set block p font size */
+  .block p {
+    font-size: 16px;
+  }
+  
+  /* set block quote background color, text color, and padding */
+  .block blockquote {
+    background-color: #e6e6e6;
+    color: #333;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  /* set block quote font size */
+  .block blockquote p {
+    font-size: 16px;
+  }
+  
+  /* set table border collapse and width */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  /* set table td padding and border */
+  table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  /* Style for the header */
+header {
+  background-color: #f7a44b;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+header nav a:hover,
+header nav a.active {
+  background-color: #fff;
+  color: #f7a44b;
+}
+
+/* Style for the recipe cards */
+.recipe-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.recipe-card {
+  width: 300px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s;
+}
+
+.recipe-card:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.recipe-card h2 {
+  font-size: 24px;
+  margin: 10px;
+}
+
+.recipe-card h3 {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.recipe-card p {
+  margin: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.recipe-card ul {
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+}
+
+.recipe-card li {
+  margin: 5px 0;
+}
+
+.recipe-card button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #f7a44b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.recipe-card button:hover {
+  background-color: #e58c31;
+}
+
+/* Style for the Save for Later page */
+.save-for-later-container {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.save-for-later-container h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.save-for-later-list {
+  list-style: none;
+  padding: 0;
+}
+
+.save-for-later-item {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s;
+}
+
+.save-for-later-item:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.save-for-later-item img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.save-for-later-item h3 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+.save-for-later-item p {
+  margin: 0;
+  font-size:24px;
+}
+
+/* Save for Later page */
+.saved-recipes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.saved-recipe-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.saved-recipe-card img {
+  width: 100%;
+  height: auto;
+}
+
+.saved-recipe-card h2 {
+  font-size: 24px;
+  margin: 10px;
+}
+
+.saved-recipe-card p {
+  font-size: 16px;
+  margin: 10px;
+}
+
+.saved-recipe-card ul {
+  margin: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.saved-recipe-card ul li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.saved-recipe-card button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.saved-recipe-card button:hover {
+  background-color: #3e8e41;
+}
+
+.saved-recipe-card button:active {
+  transform: translateY(2px);
+}
+
+.like-button {
+  display: inline-block;
+  background-color: #FFFFFF;
+  color: #333333;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.like-button:hover {
+  background-color: #333333;
+  color: #FFFFFF;
+}
+
+.like-button.active {
+  background-color: #333333;
+  color: #FFFFFF;
+}
+
+
+  

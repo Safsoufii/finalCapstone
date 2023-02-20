@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Hobby Recipes</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<!-- Link to external stylesheet -->
+</head>
+<body>
+	<header>
+		<h1>My Hobby Recipes</h1>
+		<nav>
+			<a href="#" class="active">Home</a>
+			<a href="about.html">About Me</a>
+			<a href="contact.html">Contact Details</a>
+			<a href="save-for-later.html">Personal Folder</a>
+			<!-- Navigation menu with links to different pages -->
+		</nav>
+	</header>
+
+	<div class="recipe-card" data-id="1">
+		<button class="save-for-later-button" onclick="addToSavedList(this)">Save for Later</button>
+		<img src="recipe1.jpg" alt="Recipe 1">
+		<h2>Recipe 1</h2>
+		<h3>Subtitle</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+		<ul>
+		  <li>Ingredient 1</li>
+		  <li>Ingredient 2</li>
+		  <li>Ingredient 3</li>
+		</ul>
+		<button>View Recipe</button>
+		<button class="like-button">Like</button>
+
+		<form>
+			<h3>Leave a Comment</h3>
+			<label for="comment-name">Name:</label>
+			<input type="text" id="comment-name" name="comment-name"><br>
+		
+			<label for="comment-text">Comment:</label>
+			<textarea id="comment-text" name="comment-text"></textarea><br>
+		
+			<input type="submit" value="Submit">
+		  </form>
+	  </div>
+	  
+
+		<div class="recipe-card" data-id="2">
+			<button class="save-for-later-button" onclick="addToSavedList(this)">Save for Later</button>
+			<img src="recipe2.jpg" alt="Recipe 2">
+			<h2>Recipe 2</h2>
+			<h3>Subtitle</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+			<ul>
+				<li>Ingredient 1</li>
+				<li>Ingredient 2</li>
+				<li>Ingredient 3</li>
+			</ul>
+			<button>View Recipe</button>
+			<button class="like-button">Like</button>
+			<form>
+				<h3>Leave a Comment</h3>
+				<label for="comment-name">Name:</label>
+				<input type="text" id="comment-name" name="comment-name"><br>
+			
+				<label for="comment-text">Comment:</label>
+				<textarea id="comment-text" name="comment-text"></textarea><br>
+			
+				<input type="submit" value="Submit">
+			  </form>
+	
+		</div>
+	</div>
+	<!-- Container for recipe cards -->
+
+	<footer>
+		<p>&copy; 2023 My Hobby Recipes</p>
+		<!-- Copyright information -->
+	</footer>
+	<script>
+	  function addToSavedList(button) {
+  const card = button.parentNode;
+  const id = card.getAttribute("data-id");
+  const title = card.querySelector("h2").textContent;
+  const imageSrc = card.querySelector("img").src;
+
+  let savedList = JSON.parse(localStorage.getItem("savedList")) || [];
+
+  const savedItem = {
+    id: id,
+    title: title,
+    imageSrc: imageSrc,
+  };
+
+  savedList.push(savedItem);
+
+  localStorage.setItem("savedList", JSON.stringify(savedList));
+
+  alert(`Item saved! You now have ${savedList.length} items saved.`);
+}
+	</script>
+</body>
+</html>
